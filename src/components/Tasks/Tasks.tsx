@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from 'react';
 import Input from '../Input/Input';
+import Task from '../Task/Task';
 
 interface ITask {
   id: string,
