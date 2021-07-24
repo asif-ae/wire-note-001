@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import './App.css';
+import Tasks from './components/Tasks/Tasks';
 
 function App() {
   return (
@@ -17,7 +18,10 @@ function App() {
           </div>
         </nav>
       </header>
-      
+
+      <div className="container">
+        <Tasks />
+      </div>
     </Fragment>
   );
 }
