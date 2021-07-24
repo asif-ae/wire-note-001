@@ -10,7 +10,6 @@ interface ITask {
 
 const Tasks = () => {
   const [myTask, setMyTask] = useState<ITask[]>([]);
-  console.log(myTask);
 
   const removeATask = (id: string) => {
     const newTaskList = myTask.filter( (taskID) => taskID.id !== id );

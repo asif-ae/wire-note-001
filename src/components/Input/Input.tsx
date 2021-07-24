@@ -33,7 +33,6 @@ const Input = ({ myTask, setMyTask }: IProps) => {
   });
 
   const onChangeHandler = (event: IObject) => {
-    task.title && console.log(task.title, task.description);
     event.target.name === "title" && setTask({
       ...task,
       title: event.target.value,
@@ -51,7 +50,6 @@ const Input = ({ myTask, setMyTask }: IProps) => {
       id: randomString,
     })
     
-    await console.log(task, randomString);
     setMyTask([
       ...myTask,
       task,
